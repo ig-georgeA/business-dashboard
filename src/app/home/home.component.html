@@ -1,0 +1,210 @@
+<div class="column-layout group">
+  <div class="row-layout group_1">
+    <h5 class="h5">
+      Welcome
+    </h5>
+    <p class="igx-typography__body-2 text">
+      December 8th, 2022
+    </p>
+  </div>
+  <div class="row-layout group_2">
+    <div class="column-layout group_3">
+      <div class="row-layout group_4">
+        <div class="column-layout group_5">
+          <igx-icon class="icon">
+            history
+          </igx-icon>
+          <p class="igx-typography__body-2 text_1">
+            Accounts Reached
+          </p>
+          <div class="row-layout group_6">
+            <h4 class="h4">
+              48k
+            </h4>
+            <p class="igx-typography__caption text_1">
+              +1.12%
+            </p>
+          </div>
+        </div>
+        <div class="column-layout group_7">
+          <igx-icon class="icon">
+            business
+          </igx-icon>
+          <p class="igx-typography__body-2 text_1">
+            Accounts Engaged
+          </p>
+          <div class="row-layout group_6">
+            <h4 class="h4">
+              48k
+            </h4>
+            <p class="igx-typography__caption text_1">
+              +1.12%
+            </p>
+          </div>
+        </div>
+        <div class="column-layout group_8">
+          <igx-icon class="icon">
+            track_changes
+          </igx-icon>
+          <p class="igx-typography__body-2 text_1">
+            Average Reach
+          </p>
+          <div class="row-layout group_6">
+            <h4 class="h4">
+              48k
+            </h4>
+            <p class="igx-typography__caption text_1">
+              +1.12%
+            </p>
+          </div>
+        </div>
+        <div class="column-layout group_9">
+          <igx-icon class="icon">
+            people
+          </igx-icon>
+          <p class="igx-typography__body-2 text_2">
+            Engagement
+          </p>
+          <div class="row-layout group_6">
+            <h4 class="h4">
+              48k
+            </h4>
+            <p class="igx-typography__caption text_1">
+              +1.12%
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column-layout group_10">
+        <div class="row-layout group_11">
+          <p class="igx-typography__subtitle-1 text_3">
+            Performance
+          </p>
+          <button igxButton="flat" igxRipple class="button">
+            <span>2022</span>
+            <igx-icon>
+              keyboard_arrow_down
+            </igx-icon>
+          </button>
+        </div>
+        <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="splineArea" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+      </div>
+    </div>
+    <div class="column-layout group_12">
+      <div class="column-layout group_10">
+        <div class="row-layout group_11">
+          <p class="igx-typography__subtitle-1 text_3">
+            Incomes per Account Type
+          </p>
+          <button igxButton="flat" igxRipple class="button">
+            <span>2022</span>
+            <igx-icon>
+              keyboard_arrow_down
+            </igx-icon>
+          </button>
+        </div>
+        <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="column" computedPlotAreaMarginMode="series" class="category-chart_1"></igx-category-chart>
+      </div>
+      <div class="column-layout group_10">
+        <div class="row-layout group_11">
+          <p class="igx-typography__subtitle-1 text_3">
+            Top Accounts
+          </p>
+        </div>
+        <igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+          <igx-column field="lastName" dataType="string" header="lastName" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="employeeID" dataType="number" header="employeeID" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="firstName" dataType="string" header="firstName" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="title" dataType="string" header="title" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="titleOfCourtesy" dataType="string" header="titleOfCourtesy" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="birthDate" dataType="date" header="birthDate" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="hireDate" dataType="date" header="hireDate" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="address.street" dataType="string" header="address street" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="address.city" dataType="string" header="address city" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="address.region" dataType="string" header="address region" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="address.postalCode" dataType="string" header="address postalCode" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="address.country" dataType="string" header="address country" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="address.phone" dataType="string" header="address phone" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="managerID" dataType="number" header="managerID" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="notes" dataType="string" header="notes" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="avatarUrl" dataType="string" header="avatarUrl" [sortable]="true" [selectable]="false"></igx-column>
+        </igx-grid>
+        <div class="row-layout group_13">
+          <button igxButton="flat" igxRipple class="button">
+            <span>VIEW ALL</span>
+            <igx-icon>
+              arrow_forward
+            </igx-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="column-layout group_3">
+      <div class="column-layout group_14">
+        <p class="igx-typography__subtitle-1 text_3">
+          Account Type
+        </p>
+        <igx-pie-chart [dataSource]="financialGlobalElectricityDemand" labelsPosition="outsideEnd" labelMemberPath="Label" valueMemberPath="Value" class="pie-chart"></igx-pie-chart>
+      </div>
+      <div class="column-layout group_15">
+        <p class="igx-typography__subtitle-1 text_3">
+          Your tasks
+        </p>
+        <igx-list class="list">
+          <igx-list-item [isHeader]="false">
+            <span igxListThumbnail>
+              <igx-avatar icon="business" [roundShape]="true" class="avatar"></igx-avatar>
+            </span>
+            <span igxListLineTitle>3 accounts need your attention</span>
+            <span igxListAction>
+              <igx-icon class="icon_1">
+                arrow_forward
+              </igx-icon>
+            </span>
+          </igx-list-item>
+          <igx-list-item [isHeader]="false">
+            <span igxListThumbnail>
+              <igx-avatar icon="mail" [roundShape]="true" class="avatar"></igx-avatar>
+            </span>
+            <span igxListLineTitle>Send email to team</span>
+            <span igxListAction>
+              <igx-icon class="icon_1">
+                arrow_forward
+              </igx-icon>
+            </span>
+          </igx-list-item>
+          <igx-list-item [isHeader]="false">
+            <span igxListThumbnail>
+              <igx-avatar icon="assessment" [roundShape]="true" class="avatar"></igx-avatar>
+            </span>
+            <span igxListLineTitle>Submit expenses report</span>
+            <span igxListAction>
+              <igx-icon class="icon_1">
+                arrow_forward
+              </igx-icon>
+            </span>
+          </igx-list-item>
+          <igx-list-item [isHeader]="false">
+            <span igxListThumbnail>
+              <igx-avatar icon="people" [roundShape]="true" class="avatar"></igx-avatar>
+            </span>
+            <span igxListLineTitle>Schedule customer meeting</span>
+            <span igxListAction>
+              <igx-icon class="icon_1">
+                arrow_forward
+              </igx-icon>
+            </span>
+          </igx-list-item>
+        </igx-list>
+        <div class="row-layout group_13">
+          <button igxButton="flat" igxRipple class="button">
+            <span>VIEW ALL</span>
+            <igx-icon>
+              arrow_forward
+            </igx-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
